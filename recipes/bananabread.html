@@ -16,6 +16,7 @@
     border: 2px dotted hwb(320 17% 16%);
     padding: 50px;
     text-align: center;
+    display: inline-block;
   }
 
   img {
@@ -38,6 +39,12 @@
     text-align:start
   }
 
+  @media (max-width: 600px) {
+        img {
+            display: flex;
+            flex-basis: 400px;
+        }
+    }
   </style>
 
 </head>
