@@ -14,7 +14,7 @@
     font-family: 'Courier New', Courier, monospace;
     max-width: 600px;
     margin: 0 auto;
-    border: 2px dotted hwb(320 17% 16%);
+    border: 2px dotted palevioletred;
     padding: 50px;
     text-align: center;
 
@@ -24,7 +24,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 4px solid rgb(172, 59, 78);
+    border: 4px solid palevioletred;
   }
 
   h1,
@@ -38,6 +38,19 @@
 
   ol {
     text-align:start
+  }
+
+  @media (max-width: 600px) {
+    body {
+      margin: 0 50px;
+
+    }
+    img {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+    }
+
   }
 </style>
 </head>
