@@ -7,20 +7,18 @@
   <style>
   * {
     background-color:rgb(245, 200, 207);
+    box-sizing: border-box;
   }
 
   body {
     font-family: 'Courier New', Courier, monospace;
-    width: 400px;
-    margin: 0 auto;
+    width: 800px;
     height: auto;
-    border: 2px dotted palevioletred;
-    border-radius: 20px;
+    margin: 0 auto;
     padding: 50px;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
   }
 
   h1 {
@@ -59,20 +57,23 @@
     text-align:start
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     body {
-      flex-basis: 500px;
-      flex-shrink: 1;
-    }
-    img {
-     margin: 0 40px;
-     min-width: 300px;
-     min-height: 300px;
-     align-self: center;
-     
+      flex-basis: 200px;
+      max-width: 300px;
+      flex: 0 1 0;
+      
     }
 
   }
+
+  footer {
+    align-self: flex-end;
+  }
+  
+  a {
+        color: palevioletred;
+    }
 
   </style>
 
@@ -107,5 +108,8 @@
    <li>Cool loaf in the pan for 10 minutes before inverting onto a wire rack to cool completely.</li>
    <li>Serve and enjoy!</li>
 </ol>
+
+<footer><a href="/index.html">Home</a></footer>
+
 </html>
 
